@@ -21,7 +21,7 @@ def array1D():
 
     mapping = memory_awal + (i - 1) * byte
 
-    if i <= 0 or i <= jumlah_elemen:
+    if i <= 0 or i < jumlah_elemen:
         print(f"[{i}]")
         print(f"Alamat = {hex(mapping)}")
     else:
