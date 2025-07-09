@@ -55,7 +55,7 @@ def array2D():
 
     # output
     # (membuat validasi. Jika baris atau kolom melebihi panjang array, maka data tidak ditemukan)
-    if barisinput <= 0 or barisinput < jumlah_baris and kolominput <= 0 or kolominput < jumlah_kolom:
+    if 0 <= barisinput < jumlah_baris and 0 <= kolominput < jumlah_kolom:
         print(f"\nA[{barisinput}][{kolominput}]")
         print(f"CMO = {hex(mapping_cmo)} (Hexadecimal)")
         print(f"    = {alamat_cmo} (Decimal)")
